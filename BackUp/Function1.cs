@@ -43,7 +43,7 @@ public static class BackUp
                             dynamic data = JsonConvert.DeserializeObject(line);
 
                             var id = (string)data.id;
-                            var Time = (DateTime)data.Time;
+                            var Time = (DateTime)data.ts;
                             var RH = (float)data.RH;
                             var T = (float)data.T;
                             var TVOC = (long)data.TVOC;
